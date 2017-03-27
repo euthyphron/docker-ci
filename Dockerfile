@@ -11,7 +11,7 @@ RUN dpkg --add-architecture i386 \
     && apt-get upgrade -yq \
     && apt-get install -yq --no-install-recommends build-essential bzip2 cpio curl python unzip wget \
     libc6:i386 libx11-6:i386 libxext6:i386 libstdc++6:i386 libexpat1:i386 \
-    libxext6 libxrender1 libxtst6 libgtk2.0-0 libxslt1.1 libncurses5-dev python-pip ruby
+    libxext6 libxrender1 libxtst6 libgtk2.0-0 libxslt1.1 libncurses5-dev python-pip ruby rake
 RUN pip install robotframework
 RUN gem install ceedling
 
